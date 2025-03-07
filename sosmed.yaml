@@ -2,11 +2,11 @@ proxies:
 - name: Dw eth0.111
   type: vless
   server: tselrg80.internetdw.my.id
-  port: 443
+  port: 80
   uuid: bac795fa-1193-46d7-a687-416db7691f12
   udp: true
   skip-cert-verify: true
-  tls: true
+  tls: false
   servername: sgx.premi.my.id
   network: ws
   ws-opts:
@@ -54,11 +54,11 @@ proxies:
 - name: Dw eth0.122
   type: vless
   server: xlbiz801.internetdw.my.id
-  port: 443
+  port: 80
   uuid: bac795fa-1193-46d7-a687-416db7691f12
   udp: true
   skip-cert-verify: true
-  tls: true
+  tls: false
   servername: sgx.premi.my.id
   network: ws
   ws-opts:
