@@ -1,4 +1,19 @@
 proxies:
+- name: Dw eth0.11Trojan
+  type: trojan
+  server: tselrg80.internetdw.my.id
+  port: 443
+  password: 7c9ab8a9-cad2-4a15-a70c-2935bf35c90f
+  udp: true
+  sni: sgx.premi.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sgx.premi.my.id
+  interface-name: eth0.11
+
 - name: Dw eth0.11
   type: vmess
   server: tselrg80.internetdw.my.id
@@ -34,3 +49,20 @@ proxies:
     headers:
       Host: sgx.premi.my.id
   interface-name: eth0.12
+
+- name: Dw eth0.12Trojan
+  type: trojan
+  server: xlbiz801.internetdw.my.id
+  port: 443
+  password: 7c9ab8a9-cad2-4a15-a70c-2935bf35c90f
+  udp: true
+  sni: sgx.premi.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sgx.premi.my.id
+  interface-name: eth0.12
+
+
